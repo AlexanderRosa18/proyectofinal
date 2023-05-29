@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar estilos</title>
+    <link rel="icon" href="/Fotos/umg.ico">
+    <link rel="stylesheet" href="/change/styles.css">
+    <script src="style.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="/index.html">Inicio</a></li>
+            <li>
+                <a href="#">Curriculum</a>
+                <ul class="menu-vertical">
+                    <li><a href="/Curriculum/curriculum.html">Curriculum Rudy</a></li>
+                    <li><a href="/Curriculum/curriculum2.html">Curriculum Keily</a></li>
+                </ul>
+            </li>
+            <li><a href="/calculadora/calculadora.html">Calculadora</a></li>
+            <li><a href="/firebase/firebase.html">Chat Firebase</a></li>
+            
+        </ul>
+    </nav>
+    <div>
+        <h1 class="h1">Editor de textos</h1>
+        <p class="first">
+            Bienvenido al editor de textos, con colores hecho con JavaScript. Te explico, abajo tienes 3 botones, que cada uno hace un funcionamiento, vamos con el primero.
+            
+            El botón "Cambiar Color Titulo" te permitirá cambiar aleatoriamente el color del título, el cual es "Título", están almacenados 7 colores, por lo cual el script tirará aleatoriamente cualquier color las veces que lo presiones.
+          
+            El botón "Cambiar Fuente Texto" te permitirá cambiar el tipo de letra del texto el que trae por defecto los textos de relleno, así que tendrás 5 tipos de fuentes de letras, escoge el que más te guste (al recargar la página volverá al texto principal)
+          
+            El botón "Cambiar Color Fondo" Este es el último, por lo tanto te dejará cambiar el color del fondo, ojo esto puede ser aleatorio como en el botón 1 y 2, (siempre almacenando 7 colores) así que escoge el que más te guste.
+        </p>
+    </div>
+    <div>
+        <h1 id="titulo">
+            Título
+        </h1>
+        <p id="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, asperiores? Incidunt cumque, dolor ab, obcaecati aliquid tempore voluptatum deserunt eaque deleniti quas dolores ipsum minus, omnis autem doloremque suscipit sequi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium aliquid perspiciatis cum iure. Fuga quod laboriosam sint ad temporibus? Possimus neque officia vitae dolorum aliquid dolor hic totam explicabo!
+         </p>
+    </div>
+    <div class="boton1">
+        <button class="boton" onclick="cambiarColorTitulo()">Cambiar color del Título</button>
+        <button class="boton" onclick="cambiarFuenteTexto()">Cambiar fuente del Texto</button>
+        <button class="boton" onclick="cambiarColorFondo()">Cambiar color de Fondo</button>
+    </div>
+</body>
+</html>

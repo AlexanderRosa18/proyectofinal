@@ -1,0 +1,154 @@
+
+body{
+    background-image:url(https://img.freepik.com/foto-gratis/estudio-gris-vacio-liso-abstracto-bien-uso-como-fondo-informe-comercial-digital-plantilla-sitio-web-telon-fondo_1258-55967.jpg?w=360);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    nav{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+display: block;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.all{
+    padding: 20px;
+    margin-left: 38.5%;
+    font-size: 60px;
+    width: 100%;
+    font-family: 'Lilita One', cursive;
+    display: flex;
+}
+.container1 > span{
+    animation: glow 2s ease-in-out infinite;
+    
+   
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px lightblue, 0 0 50px lightblue, 0 0 100px lightblue;
+    }
+    10%, 90% {
+        color: black;
+        text-shadow: none;
+    }
+
+   
+}
+.container1 > span:nth-child(2){
+        animation-delay: 0.25s;
+}
+.container1 > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.container1 > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.container1 > span:nth-child(5){
+    animation-delay: 1s;
+}
+.container1 > span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.container1 > span:nth-child(7){
+    animation-delay: 1.50s;
+}
+.container1 > span:nth-child(8){
+    animation-delay: 1.75s;
+}
+.container1 > span:nth-child(9){
+    animation-delay: 2s;
+}
+.container1 > span:nth-child(10){
+    animation-delay: 2.25s;
+}
+.container1 > span:nth-child(11){
+    animation-delay: 2.50s;
+}
+
+
+.container{
+    width: fit-content;
+    margin: 50px auto; 
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkcyan;
+}
+
+.texto{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+   
+}
+
+.tecla{
+ width: 80px;
+ height: 80px;
+ margin: 3px;
+ border-radius: 20px;
+ border: none;
+ font-size: 30px;
+ cursor: pointer;
+ transition: .3s;    
+}
+.tecla:hover{
+    background-color: #000;
+    color: aliceblue;
+}
+#operacionRealizada {
+    background-color: aliceblue;
+    padding: 3px;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+#txtResultado{
+    height: 80px;
+    border: 1px solid skyblue;
+    border: 1px solid black;
+    margin: 10px 0;
+    font-size: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #fff;
+} 

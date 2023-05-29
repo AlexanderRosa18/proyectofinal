@@ -1,0 +1,75 @@
+nav{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+display: block;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.h1{
+    text-align: center;
+    padding-top: 25px;
+}
+.first {
+    text-align: justify;
+    padding-left: 325px;
+    padding-right: 325px;
+}
+
+#titulo{
+    padding-left: 325px;
+}
+
+#texto{
+    text-align: justify;
+    padding-left: 325px;
+    padding-right: 325px;
+}
+
+.boton{
+    text-align: center;
+    size: 160px;
+    border-style: none;
+    background-color: orange;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+.boton1{
+    text-align: center;
+}

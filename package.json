@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angula": "^0.0.1-security",
+    "firebase": "^9.22.1"
+  }
+}

@@ -1,0 +1,108 @@
+body{
+    background-image:url(https://img.freepik.com/foto-gratis/estudio-gris-vacio-liso-abstracto-bien-uso-como-fondo-informe-comercial-digital-plantilla-sitio-web-telon-fondo_1258-55967.jpg?w=360);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    nav{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+display: block;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.flex-container-row {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-row > div {
+    margin: 5px;
+    padding: 6px;
+}
+
+#ImgLog {
+    width: 100px;
+}
+
+#mensajesChat {
+    width: 50%;
+    height: 200px;
+    margin-top: 10px;
+    background-color: gainsboro;
+    border: 2px solid green;
+    overflow-y: scroll;
+}
+
+#textoMensaje{
+    height: 50px;
+    width: 51%;
+    font-size: 20px;
+    text-align: center;
+    background-color: azure;
+}
+
+#textoMensaje:focus{
+    outline: none;
+}
+
+.botonIniciar{
+    border-style: none;
+    background-color: orange;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.botonCerrar{
+    border-style: none;
+    background-color: orange;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.nombre-usuario{
+    color: brown;
+}
+
+.mensaje-chat{
+    font-weight: bold;
+}

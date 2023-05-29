@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Fotos/umg.ico">
+</head>
+<body>
+    <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="/index.html">Inicio</a>
+            </li>
+        
+            <li>
+            
+                <a href="#">Curriculum</a>
+                <ul class="menu-vertical">
+                    <li><a href="/Curriculum/curriculum.html">Curriculum Rudy</a></li>
+                    <li><a href="/Curriculum/curriculum2.html">Curriculum Keily</a></li>
+                </ul>
+            </li>
+            <li><a href="/firebase/firebase.html">Chat Firebase</a></li>
+            <li><a href="/change/style.html">Editar Web (Js)</a></li>
+            
+        </ul>
+    </nav>
+    <div class="all">
+    <div class="container1">
+        <span>C</span>
+        <span>a</span>
+        <span>l</span>
+        <span>c</span>
+        <span>u</span>
+        <span>l</span>
+        <span>a</span>
+        <span>d</span>
+        <span>o</span>
+        <span>r</span>
+        <span>a</span>
+    </div>
+    
+
+   </div>
+    <div class="container">
+    <div id="operacionRealizada">0</div>
+    <div id="txtResultado"></div>
+    <div class="fila">
+        <button class="tecla" onclick="operador('1')">1</button>
+        <button class="tecla" onclick="operador('2')">2</button>
+        <button class="tecla" onclick="operador('3')">3</button>
+        <button class="tecla" onclick="operacion('*')">*</button>
+    </div>
+    <div class="fila">
+        <button class="tecla" onclick="operador('4')">4</button>
+        <button class="tecla" onclick="operador('5')">5</button>
+        <button class="tecla" onclick="operador('6')">6 </button>
+        <button class="tecla" onclick="operacion('-')">-</button>
+    </div>
+    <div class="fila">
+        <button class="tecla" onclick="operador('7')">7</button>
+        <button class="tecla" onclick="operador('8')">8</button>
+        <button class="tecla" onclick="operador('9')">9 </button>
+        <button class="tecla" onclick="operacion('+')">+</button>
+    </div>
+
+        <div class="fila">
+        <button class="tecla" onclick="limpiar()">AC</button>
+        <button class="tecla" onclick="operador('0')">0</button>
+        <button class="tecla" onclick="calculo()">=</button>
+        <button class="tecla" onclick="operacion('/')">/</button>
+        <script src="calculadora.js"></script>
+    </div>
+</div>
+</body>
+</html>

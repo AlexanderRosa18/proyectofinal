@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="firebase.css">
+    <link rel="icon" href="/Fotos/umg.ico">
+</head>
+<body>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="/index.html">Inicio</a></li>
+            <li>
+                
+                <a href="#">Curriculum</a>
+               
+                <ul class="menu-vertical">
+                    
+                    <li><a href="/Curriculum/curriculum.html">Curriculum Rudy</a></li>
+                    
+                    <li><a href="/Curriculum/curriculum2.html">Curriculum Keily</a></li>
+                </ul>
+            </li>
+            <li><a href="/calculadora/calculadora.html">Calculadora</a></li>
+            <li><a href="/change/style.html">Editar Web (Js)</a></li>
+        </ul>
+    </nav>
+    <div class="flex-container-row">
+        <div>
+            <h2>Chat con FIREBASE</h2>
+        </div>
+            <div>
+                <img id="ImgLog" src="https://umg.edu.gt/assets/umg.png">
+            </div>
+        </div>
+        <div class="flex-container-row">
+            <div>
+                Conectado al servidor como:
+            </div>
+        </div>
+        <div class="flex-container-row">
+            <div>
+                <div id="UsuarioConectado"><b>No estás conectado</b></div>
+            </div>
+           
+        </div>
+        <div class="flex-container-row">
+            <button class="botonIniciar" id="boton1">Iniciar Sesión</button>
+            <button class="botonCerrar" id="boton2" style="display:none;">Cerrar Sesión</button>
+        </div>
+        <div class="flex-container-row">
+                
+                <div id="mensajesChat">
+                    Acá aparecerán los mensajes enviados
+                    
+                </div>
+                        
+            </div>
+            <div class="flex-container-row">
+                <input type="text" id="textoMensaje" placeholder="Ingrese un mensaje y presione Enter">
+            </div>
+            </div>
+            <script src="/firebase/firebase.js" type="module"></script>
+</body>
+</html>
