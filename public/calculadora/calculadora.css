@@ -52,7 +52,7 @@ text-decoration: none;
     font-size: 60px;
     width: 100%;
     font-family: 'Lilita One', cursive;
-    display: flex;
+    text-align: auto;
 }
 .container1 > span{
     animation: glow 2s ease-in-out infinite;

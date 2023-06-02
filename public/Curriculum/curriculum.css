@@ -1,0 +1,149 @@
+
+body{
+    background-image:url(/Fotos/32052.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+}
+    nav{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu-horizontal > li > a{
+display: block;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.item1 { grid-area: header; font-size: 40px; font-family: sans-serif; }
+.item2 { grid-area: menu;}
+.item3 { grid-area: main; font-size: 15px; font-family: sans-serif;}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer;  }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+ 
+    padding: 50px;
+  }
+  
+  .grid-container > .item3{
+    color: white;
+    border-radius: 10px;
+    background-color: #333;
+    border-color: bisque;
+    border-style: solid;
+    padding-top: 3PX;
+  }
+
+  .grid-container > .item1{
+    color: white;
+    border-radius: 10px;
+    background-color: #333;
+    border-color: bisque;
+    border-style: solid;
+    text-align: center;
+  }
+
+  .grid-container > .item4{
+    color: white;
+    border-radius: 10px;
+    background-color: #333;
+    border-color: bisque;
+    border-style: solid;
+    text-align: center;
+  }
+
+  .grid-container > .item5{
+    color: white;
+    border-radius: 10px;
+    background-color: #333;
+    border-color: bisque;
+    border-style: solid;
+    text-align: center;
+    margin-right: 32%;
+    padding-top: 10px;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+  }
+  
+  td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: gray;
+  }
+  .mifoto{
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: bisque;
+    
+  }
+
+    .texto{
+    text-align: justify;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+.red{
+    width: 60px;
+    height: 60px;
+}
+
+.red1{
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+}

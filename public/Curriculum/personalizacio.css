@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&family=Yellowtail&display=swap');
+* {
+    font-family: "titillium web";
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 0px;
+    
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+display: block;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.titulo{
+    color: white;
+    padding-top: 160px;
+    padding-left: 50px;
+}
+
+.text{
+    color: white;
+    margin-right: 60%;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+.inicio {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(https://th.bing.com/th/id/R.800c91595977984311a9f580dd85c349?rik=ggn2RLLR%2bENN7Q&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20200319%2f52bea04d22304f48a4bc3ad06d2e467e.jpeg&ehk=9%2ff68WpU3SthgwvuexlZJrpk%2bPWFGGBndZvqriM0qeo%3d&risl=&pid=ImgRaw&r=0);
+   background-size: cover;
+   background-position: center center;
+   color:#fff;
+
+}
+.inicio .contenido-section {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido-section header {
+    padding: 30px;
+
+}
+
+/*menulateral*/
+.inicio .contenido-section header nav {
+    position: fixed;
+    margin-left: 60px;
+    background-color: #940253;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido-section header nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.inicio .contenido-section header.logo {
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 35px #fff;
+  
+}
+
+.inicio .contenido-section header .logo .color {
+    color: #940253;
+    font-family: "Yellowtail";
+
+}
+
+.inicio .contenido-section header .nav-bar {
+    position: fixed;
+    background-color: #940253;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition:  .3s;
+}
+
+.inicio .contenido-section header .nav-bar:hover {
+    box-shadow: 0 0 0 35px #fff;
+
+}
+
+.inicio .contenido-section .info {
+    padding-bottom: 130px;
+}
+
+.inicio .contenido-section .info h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.inicio .contenido-section.info h2 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+.inicio .contenido-section .info .redes {
+    margin:  20px 0;
+
+}
+
+.inicio .contenido-section .info .redes a {
+    display: inline-block;
+    text-decoration: none;
+    border: #000;
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+
+}
+
+.inicio .contenido-section .info .redes a:hover {
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
+
+.inicio .contenido-section .foto {
+    position: relative;
+}
+/*use  .inicio .contenido seccion .foto img para empezar a personalizar mi foto personal, luego utilize max-width: para que me reduciera la foto aplicandole 200pixeles, y la propiedad border radius la utilice para definir la dedondes de las esquinas que en este
+caso fue mi foto utlizando un 50%, El uso más habitual de border es el de establecer simultáneamente el grosor, estilo y color del borde de un elemento: div { border: 1px solid #C00; } luego utilice la propiedad position:absolute que lo q hace que un elemento se coloque respecto a su contenedor posicionado mas cercano, si no encuentra ningún contenedor cercano, el elemento se colocara respecto al viewport. luego utilice la propiedad transform: translate para que me  reposicionara un elemento horizontalmente en el plano 2D en este caso mi foto personal*/
+.inicio .contenido-section .foto img {
+    max-width: 150px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #940253;
+    position: absolute;
+    left:  50%;
+    top: -100px;
+    height: 100px;
+    transform: translateX(-50%);
+}
+
+/*estilos generales*/
+.titulo-seccion {
+
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+
+/*sECCION SOBRE MI/
+/use el background-color y utilice un tipo gris claro para aplicarle a la seccion donde se encuentra la seccion que denomine SOBRE MI*/
+.sobremi {
+    
+    background-color: #e6e6e6;
+    padding: 140px 0 100 px 0;
+    text-align: center;
+
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+
+}
+/*lo que hice con text-transform fue cambiarle de tamaño al texto que contiene el h3 que en este caso en detalles personales*/
+.sobremi .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.sobremi .contenido-seccion .especial {
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+/*lo que hice con display flex fue dividir las tres secciones que tenia, y con justify-content lo que hice fue resaltar mas el nombre de cada seccion en este caso fue perfil, ubicacion, intereses */
+.sobremi .contenido-seccion .fila {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.sobremi .contenido-seccion .fila .col {
+    width: 30%;
+}
+
+.sobremi .contenido-seccion .fila .col i{
+    /*con color le asigne un color al icono de perfil de location y de flag*/
+    color: #940253;
+   display:  inline-block;
+    width: 40px;
+    height: 40px;
+    /*con border le asigne un borde a los iconos y le aplique un color como vino*/
+    border:  2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.sobremi .contenido-seccion .fila .col span {
+    /*con display:block lo que hice fue poner el nombre de cada icono abajo de cada icono*/
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/*SECCION HABILIDADES*/
+.habilidades {
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url(https://c.wallhere.com/photos/2c/b0/digital_art_3d_balls_bands-611734.jpg!d);
+    background-size: cover;
+    /*con este elemento lo que hice fue apliar mi imagen de fondo de mi segunda ssecion que denomine con el  nombre habilidades*/
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+
+.habilidades .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.habilidades .contenido-seccion h3 {
+    /*bien lo que hice con text-transform: uppercase fue que me modifico el tamaño de mi h3 que este seria "me especializo" y aparte de eso me lo cambio a mayusculas*/
+    text-transform: uppercase;
+    font-size: 30px;
+
+
+}
+.habilidades .contenido-seccion .fila {
+    /*lo que hice en este caso con display flex fue que me posicionara horizontal mente cada parte o cada habilidad bien pero se ve feo entonces le pongo mas propiedades para esterilizarlo*/
+    display:flex;
+    /*bien con justify-content: space-berween, lo que hice fue que me lo ordenara horizontalmente pero cada habilidad por separada tal y como con los iconos de arriba*/
+    justify-content: space-between;
+    
+}
+
+
+.habilidades .contenido-seccion .fila .col {
+    width:  47px;
+    text-align: left;
+
+}
+
+.habilidades .contenido-seccion .fila .col .cont-barra {
+    display: flex;
+    align-items: center;
+
+}
+
+.habilidades .contenido-seccion .barra {
+    display: flex;
+    border:  1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.habilidades .contenido-seccion .barra .e {
+    background-color: #363636;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+
+}
+/*SECCION RESUMEN*/
+
+.resumen {
+    background-color: #e6e6e6;
+    padding: 140 0 100 0;
+    text-align: center;
+}
+
+.resumen .contenido-seccion {
+    max-width: 1000px;
+    margin:auto;
+    padding: 0 10px;
+
+
+}
+
+.resumen .contenido-seccion .info .col   table h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.resumen .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.resumen .contenido-seccion .info {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top:  30px;
+}
+
+.resumen .contenido-seccion .info .col {
+    width: 45%;
+}
+
+.resumen .contenido-seccion .info .col .titulo {
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+
+
+}
+.resumen .contenido-seccion .info .col table {
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+
+.resumen .contenido-seccion .info .col table .datos {
+    width: 40%;
+    border-bottom:  1px solid #bab9b9;
+
+
+} 
+
+.resumen .contenido-seccion .info .col .table h4 {
+    margin-top: 10px;
+
+}
+
+.resumen .contenido-seccion .info .col table h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.resumen  .contenido-seccion   .info .col table  p {
+    font-size: 14px;
+
+ 
+}
+
+.resumen .contenido-seccion .col table .promedio {
+    display: block;
+    color: #940253;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+.resumen .contenido-seccion .col table .descripcion {
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+}
+
+/*SECCION CONTACTO*/
+.contacto {
+   background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #bab9b9;
+    text-align: center;
+
+}
+.contacto .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding:  0 10px;
+}
+
+.contacto .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size:  30px;
+
+}
+
+.contacto .contenido-seccion .fila {
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col {
+    margin-top: 50px;
+}
+
+.contacto .contenido-seccion .fila .col h2 {
+    color: #940253;
+
+}
